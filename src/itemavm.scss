@@ -1,0 +1,18 @@
+.custom-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white; /* Ok simgesinin üst kısmını beyaz yapar */
+  background: transparent;
+}
+
+.menu-bar {
+  background-image: url('assets/images/arka-slider.png');
+  background-size: cover; /* Resmi alanı tam doldurur (en-boy oranını korur) */
+  background-position: center; /* Resmi ortalar */
+  background-repeat: no-repeat;
+  height: 300px; /* Div yüksekliğini belirle */
+}

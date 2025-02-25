@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItemAVM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body style="background-color: #19191D">
+
+<!-- Üst Bilgi Barı -->
+<div class="container-fluid p-0">
+    <!-- Üst Bar -->
+    <div class="top-bar text-white py-1" style="background-color: #FF5501;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Sol Taraf: Yazı -->
+            <div class="d-flex align-items-center">
+                <img src="assets/icon/2.svg" alt="Icon" class="me-2" style="width: 20px; height: 20px;">
+                <span>Türkiye'nin En İyi E-pin Sitesi!</span>
+            </div>
+            <!-- Sağ Taraf: Menü -->
+            <div class="menu d-flex gap-3">
+                <a href="#" class="text-white text-decoration-none">% Günün Fırsatları</a>
+                <a href="#" class="text-white text-decoration-none">Blog</a>
+                <a href="#" class="text-white text-decoration-none">Destek Merkezi<i
+                        class="bi bi-caret-down ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3"
+     style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+    <div class="container">
+        <div class="col-2">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/icon/logo.svg" alt="ItemAVM" width="40" class="me-2">
+                <span style="color: #FF5501;">item</span><span>AVM</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse col-6" id="navbarContent">
+            <form class="d-flex flex-grow-1 mx-lg-3 my-2 my-lg-0">
+                <div class="input-group position-relative">
+                    <span class="position-absolute start-0 top-50 translate-middle-y ms-3 z-1">
+            <i class="bi bi-search text-secondary"></i>
+        </span>
+                    <input type="search" class="form-control ps-5" placeholder="Oyunlarda Ara" aria-label="Arama"
+                           style="border-radius: 12px 0 0 12px;">
+                    <button class="btn" type="submit"
+                            style="background-color: #FF5501; color: white; border-radius: 0 12px 12px 0;width: 80px;">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+            <button
+                    class="btn"
+                    type="submit"
+                    style="
+                border: 2px solid #FF5501;
+                background-color: transparent;
+                color: #FF5501;
+                border-radius: 12px;
+                width: 110px;
+                transition: all 0.3s;
+            " onmouseover="this.style.backgroundColor='rgba(255,85,1,0.16)'; this.style.color='white'"
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#FF5501'">
+                <img src="assets/icon/Bolt.svg" alt="Icon" class="me-2" style="width: 20px; height: 20px;">
+                <span style="font-size: 12px;">İlan Ekle</span>
+            </button>
+        </div>
+        <div class="col-4" style="display: flex; justify-content: flex-end; gap: 8px;">
+            <button class="btn" style="background-color: rgba(106, 106, 149, 0.1)">
+                <img src="assets/icon/Sun.svg" alt="Icon" class="me-2"
+                     style="width: 20px; height: 20px;">
+
+            </button>
+            <button class="btn" style="background-color: rgba(106, 106, 149, 0.1)">
+                <img src="assets/icon/BagSmile.svg" alt="Icon" class="me-2" style="width: 20px; height: 20px;">
+            </button>
+            <button class="btn text-white" style="background-color: #11D377">
+                Kayıt Ol
+                <img src="assets/icon/Bolt2.svg" alt="Icon" class="me-2"
+                     style="width: 20px; height: 20px;">
+            </button>
+            <button class="btn text-white" style="background-color: #FF5501">
+                Giriş Yap
+                <img src="assets/icon/Login3.svg" alt="Icon" class="me-2"
+                     style="width: 20px; height: 20px;">
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Menü Barı -->
+<div class="menu-bar bg-dark py-2">
+    <div class="container d-flex justify-content-between flex-wrap">
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(255, 85, 1, 0.1);
+                  border-radius: 12px;">
+        <img src="assets/icon/Burger.svg" alt="">
+    </span>
+            <span>Kategoriler</span>
+        </button>
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(255, 65, 68, 0.1);
+                  border-radius: 12px;">
+        <img src="assets/icon/Heart.svg" alt="">
+    </span>
+            <span>Sosyal Medya</span>
+        </button>
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(65, 125, 255, 0.1);
+                  border-radius: 12px;">
+        <img src="assets/icon/LOL.svg" alt="">
+    </span>
+            <span>LOL</span>
+        </button>
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(255, 70, 85, 0.1);
+                  border-radius: 12px;">
+            <img src="assets/icon/VALO.svg" alt="">
+    </span>
+            <span>Valorant</span>
+        </button>
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(238, 155, 30, 0.1);
+                  border-radius: 12px;">
+            <img src="assets/icon/svgexport-2.svg" alt="">
+    </span>
+            <span>PUBG MOBILE</span><i class="bi bi-caret-down"></i>
+        </button>
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(255, 85, 1, 0.1);
+                  border-radius: 12px;">
+            <img src="assets/icon/Cart2.svg" alt="">
+    </span>
+            <span>İlan Pazarı</span>
+        </button>
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(255, 85, 1, 0.1);
+                  border-radius: 12px;">
+            <img src="assets/icon/Minimalistic.svg" alt="">
+    </span>
+            <span>Mağazalar</span>
+        </button>
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(255, 85, 1, 0.1);
+                  border-radius: 12px;">
+            <img src="assets/icon/Cup.svg" alt="">
+    </span>
+            <span>Çekilişler</span>
+        </button>
+        <button class="btn d-flex align-items-center gap-2 p-0 text-white">
+            <span class="d-flex align-items-center justify-content-center"
+                  style="
+                  width: 34px;
+                  height: 34px;
+                  background-color: rgba(255, 85, 1, 0.1);
+                  border-radius: 12px;">
+            <img src="assets/icon/Ticket.svg" alt="">
+    </span>
+            <span>Günün Fırsatları</span>
+        </button>
+    </div>
+</div>
+
+<!-- Kampanya Bölümü -->
+<section class="promotion-section py-5 text-white text-center"
+         style="background-image: url('assets/images/arka-slider.png');
+         background-size: contain;
+         background-position: top;
+         background-repeat: no-repeat;
+         height: 300px;">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4">
+                <img src="assets/icon/pubgwhite.svg" alt="">
+            </div>
+            <div class="col-4">
+                <h2>PUBG MOBILE İNDİRİMLERİNİ KAÇIRMA!</h2>
+            </div>
+            <div class="col-4">
+                <button class="btn text-white mt-3 d-flex align-items-center justify-content-center gap-2"
+                        style="background-color: rgba(255, 255, 255, 0.15); border-radius: 50px;">
+                    İNDİRİMLERE GÖZ AT
+                    <i class="bi bi-arrow-right fs-5"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="row justify-content-center">
+            <div class="col-8 mx-auto">
+                <div class="d-flex flex-nowrap overflow-x-auto py-2"
+                     style="gap: 12px;">
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px; border: 2px solid #FF5501;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                    <div class="flex-shrink-0">
+                        <img src="assets/icon/rodinya_logo.jpeg"
+                             class="rounded-circle object-fit-cover"
+                             style="width: 50px; height: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Oyun Fırsatları Bölümü -->
+<section style="
+         background-image: url('assets/images/slider4.svg');
+         background-size: cover;
+         background-position: top;
+         background-repeat: no-repeat;
+         height: 300px;
+         position: relative;
+         z-index: 2;
+         margin-top: -100px;
+         max-width: 800px;
+         margin-left: auto;
+         margin-right: auto;
+         border-radius: 16px;
+         box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" style="padding-left: inherit;">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active"
+                       style="border: none; color: #EE9B1E; border-right: 4px solid #EE9B1E; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <img src="assets/icon/VALO.svg" alt="Valorant" style="width: 25px; height: auto;">
+                        Valorant
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action text-white"
+                       style="border: none; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <img src="assets/icon/pubgwhite.svg" alt="PUBG MOBILE" style="width: 25px; height: auto;">
+                        PUBG MOBILE
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action text-white"
+                       style="border: none; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <img src="assets/icon/lolwhite.svg" alt="League Of Legends">
+                        League Of Legends
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action text-white"
+                       style="border: none; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <img src="assets/icon/mobilewhite.svg" alt="Mobile Legends">
+                        Mobile Legends
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action text-white"
+                       style="border: none; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <img src="assets/icon/wolfwhite.svg" alt="Wolf Team">
+                        Wolf Team
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn text-white mt-3 d-flex align-items-center justify-content-center gap-2"
+                            style="background-color: rgba(255, 255, 255, 0.15); border-radius: 50px;">
+                        Adventure
+                    </button>
+
+                    <button class="btn text-white mt-3 d-flex align-items-center justify-content-center gap-2"
+                            style="background-color: rgba(255, 255, 255, 0.15); border-radius: 50px;">
+                        RPG
+                    </button>
+                </div>
+                <p class="text-white">Valorant oyununda geçerli</p>
+                <h1 class="text-white">%25 İndirim Fırsatlarını Kaçırma Göz At!</h1>
+                <p class="text-white">Valorant oyununda geçerli VP indirimlerini kaçırma! Yeni koleksiyonlara özel
+                    fırsatları keşfet!</p>
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Yuvarlak ikonlar ve buton -->
+                    <div class="position-relative d-flex align-items-center gap-1">
+                        <!-- Yuvarlak ikonlar -->
+                        <div class="position-absolute rounded-circle border"
+                             style="width: 25px; height: 25px; left: 0px; z-index: 1; background-color: white; border: 2px solid #FF5501;">
+                            <img src="assets/icon/rodinya_logo.jpeg" class="rounded-circle object-fit-cover"
+                                 style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="position-absolute rounded-circle border"
+                             style="width: 25px; height: 25px; left: 10px; z-index: 2;">
+                            <img src="assets/icon/rodinya_logo.jpeg" class="rounded-circle object-fit-cover"
+                                 style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="position-absolute rounded-circle border"
+                             style="width: 25px; height: 25px; left: 20px; z-index: 3;">
+                            <img src="assets/icon/rodinya_logo.jpeg" class="rounded-circle object-fit-cover"
+                                 style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="position-absolute rounded-circle border"
+                             style="width: 25px; height: 25px; left: 30px; z-index: 4;">
+                            <img src="assets/icon/rodinya_logo.jpeg" class="rounded-circle object-fit-cover"
+                                 style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="position-absolute rounded-circle border"
+                             style="width: 25px; height: 25px; left: 40px; z-index: 5;">
+                            <img src="assets/icon/rodinya_logo.jpeg" class="rounded-circle object-fit-cover"
+                                 style="width: 100%; height: 100%;">
+                        </div>
+                    </div>
+                    <button class="btn ms-auto text-white" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50px;">Çok Beğenildi 👍</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
