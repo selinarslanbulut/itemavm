@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ItemAVM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="itemavm.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
@@ -321,27 +321,27 @@
          background-size: cover;
          background-position: top;
          background-repeat: no-repeat;
-         height: 300px;
+         height: 343px;
          position: relative;
          z-index: 2;
-         margin-top: -100px;
-         max-width: 800px;
+         margin-top: -90px;
+         max-width: 1000px;
          margin-left: auto;
          margin-right: auto;
-         border-radius: 16px;
+         border-radius: 24px;
          box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
     <div class="container">
         <div class="row">
             <div class="col-md-3" style="padding-left: inherit;">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active"
-                       style="border: none; color: #EE9B1E; border-right: 4px solid #EE9B1E; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
-                        <img src="assets/icon/VALO.svg" alt="Valorant" style="width: 25px; height: auto;">
+                    <a href="#" class="list-group-item list-group-item-action text-white"
+                       style="border: none; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center; border-radius: 24px 0 0 0;">
+                        <img src="assets/icon/valowhite.svg" alt="Valorant" style="width: 25px; height: auto;">
                         Valorant
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action text-white"
-                       style="border: none; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
-                        <img src="assets/icon/pubgwhite.svg" alt="PUBG MOBILE" style="width: 25px; height: auto;">
+                    <a href="#" class="list-group-item list-group-item-action active"
+                       style="border: none; color: #EE9B1E; border-right: 4px solid #EE9B1E; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                        <img src="assets/icon/pubgyellow.svg" alt="PUBG MOBILE" style="width: 25px; height: auto;">
                         PUBG MOBILE
                     </a>
                     <a href="#" class="list-group-item list-group-item-action text-white"
@@ -355,7 +355,7 @@
                         Mobile Legends
                     </a>
                     <a href="#" class="list-group-item list-group-item-action text-white"
-                       style="border: none; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center;">
+                       style="border: none; background-color: rgba(0, 0, 0, 0.5); text-align: center; display: flex; flex-direction: column; align-items: center; border-radius: 0 0 0 24px">
                         <img src="assets/icon/wolfwhite.svg" alt="Wolf Team">
                         Wolf Team
                     </a>
@@ -363,7 +363,7 @@
             </div>
 
 
-            <div class="col-md-9">
+            <div class="col-md-9 d-flex flex-column justify-content-center">
                 <div class="d-flex align-items-center gap-3">
                     <button class="btn text-white mt-3 d-flex align-items-center justify-content-center gap-2"
                             style="background-color: rgba(255, 255, 255, 0.15); border-radius: 50px;">
@@ -409,11 +409,195 @@
                                  style="width: 100%; height: 100%;">
                         </div>
                     </div>
-                    <button class="btn ms-auto text-white" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 50px;">Çok Beğenildi 👍</button>
+                    <button class="btn text-white"
+                            style="margin-left: 70px; background-color: rgba(0, 0, 0, 0.5); border-radius: 50px;">Çok
+                        Beğenildi 👍
+                    </button>
                 </div>
             </div>
 
         </div>
+    </div>
+</section>
+
+<section style="
+position: relative;
+z-index: 2;
+margin-top: 35px;
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;">
+    <div style="display: flex; gap: 10px; justify-content: center; height: 85px;">
+        <a href="#" style="
+    border: none;
+    color: white;
+    border-right: 4px solid #FF4655;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 284px;
+    text-decoration: none;
+    background-color: rgba(106, 106, 149, 0.08);
+    border-radius: 12px;
+    padding: 15px;">
+
+            <!-- Sol Taraf - Resim -->
+            <div style="flex-shrink: 0;">
+                <img src="assets/icon/VALO.svg" alt="Valorant"
+                     style="width: 30px; height: 30px; object-fit: contain;">
+            </div>
+
+            <!-- Sağ Taraf - Metinler -->
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="
+            font-size: 1.1em;
+            margin-bottom: 4px;">
+            Valorant
+        </span>
+                <span style="
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            line-height: 1.3;">
+            VP Satın Al
+        </span>
+            </div>
+        </a>
+        <a href="#" style="
+    border: none;
+    color: white;
+    border-right: 4px solid #417DFF;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 284px;
+    text-decoration: none;
+    background-color: rgba(106, 106, 149, 0.08);
+    border-radius: 12px;
+    padding: 15px;">
+
+            <!-- Sol Taraf - Resim -->
+            <div style="flex-shrink: 0;">
+                <img src="assets/icon/LOL.svg" alt="LOL"
+                     style="width: 30px; height: 30px; object-fit: contain;">
+            </div>
+
+            <!-- Sağ Taraf - Metinler -->
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="
+            font-size: 1.1em;
+            margin-bottom: 4px;">
+            League Of Legends
+        </span>
+                <span style="
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            line-height: 1.3;">
+            RP Satın Al
+        </span>
+            </div>
+        </a>
+        <a href="#" style="
+    border: none;
+    color: white;
+    border-right: 4px solid #EE9B1E;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 284px;
+    text-decoration: none;
+    background-color: rgba(106, 106, 149, 0.08);
+    border-radius: 12px;
+    padding: 15px;">
+
+            <!-- Sol Taraf - Resim -->
+            <div style="flex-shrink: 0;">
+                <img src="assets/icon/pubgyellow.svg" alt="PUBG"
+                     style="width: 30px; height: 30px; object-fit: contain;">
+            </div>
+
+            <!-- Sağ Taraf - Metinler -->
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="
+            font-size: 1.1em;
+            margin-bottom: 4px;">
+            PUBG Mobile
+        </span>
+                <span style="
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            line-height: 1.3;">
+            UC Satın Al
+        </span>
+            </div>
+        </a>
+        <a href="#" style="
+    border: none;
+    color: white;
+    border-right: 4px solid #417DFF;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 284px;
+    text-decoration: none;
+    background-color: rgba(106, 106, 149, 0.08);
+    border-radius: 12px;
+    padding: 15px;">
+
+            <!-- Sol Taraf - Resim -->
+            <div style="flex-shrink: 0;">
+                <img src="assets/icon/LOL.svg" alt="LOL"
+                     style="width: 30px; height: 30px; object-fit: contain;">
+            </div>
+
+            <!-- Sağ Taraf - Metinler -->
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="
+            font-size: 1.1em;
+            margin-bottom: 4px;">
+            League Of Legends
+        </span>
+                <span style="
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            line-height: 1.3;">
+            RP Satın Al
+        </span>
+            </div>
+        </a>
+        <a href="#" style="
+    border: none;
+    color: white;
+    border-right: 4px solid #FF4655;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 284px;
+    text-decoration: none;
+    background-color: rgba(106, 106, 149, 0.08);
+    border-radius: 12px;
+    padding: 15px;">
+
+            <!-- Sol Taraf - Resim -->
+            <div style="flex-shrink: 0;">
+                <img src="assets/icon/VALO.svg" alt="Valorant"
+                     style="width: 30px; height: 30px; object-fit: contain;">
+            </div>
+
+            <!-- Sağ Taraf - Metinler -->
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+        <span style="
+            font-size: 1.1em;
+            margin-bottom: 4px;">
+            Valorant
+        </span>
+                <span style="
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            line-height: 1.3;">
+            VP Satın Al
+        </span>
+            </div>
+        </a>
     </div>
 </section>
 
